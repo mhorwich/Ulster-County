@@ -1,0 +1,147 @@
+body {
+  background-color: #d4d4d4;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#headwrapper {
+  font-size: 48px;
+  text-shadow: 2px 2px 10px #aaa;
+  font-family: "Staatliches", cursive;
+  transition: color 1s linear, background-image 2s linear;
+  color: black;
+  margin: 0;
+}
+
+#headwrapper h1 {
+  margin: 0;
+}
+
+#headwrapper h2 {
+  margin: 0;
+  font-size: 30px;
+  text-shadow: 2px 2px 10px #aaa;
+  font-family: "Staatliches", cursive;
+  transition: color 1s linear, background-image 2s linear;
+  color: black;
+}
+
+#headwrapper:hover {
+  color: white;
+}
+
+#cover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#credits{
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+
+}
+
+#lyrics {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 18px;
+  transition: color 0.2s linear, tex-shadow 0.2s linear;
+}
+
+#lyrics:hover {
+  color: white;
+  text-shadow: 2px 2px 10px #aaa;
+}
+
+#coming-soon{
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+#site-by{
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+
+#email {
+  font-family: "Staatliches", cursive;
+  background-color: black;
+  text-size: 36px;
+  width: 4em;
+  height: 2.5em;
+  text-align: center;
+  position: fixed;
+  padding: 0 1em 0.5em 1em;
+  bottom: 2px;
+  right: 2px;
+    opacity: 0.5;
+  transition: background-color 0.3s linear;
+}
+
+#email a {
+  transition: color 0.3s linear;
+}
+
+#email:hover {
+  background-color: white;
+}
+
+#email:hover a {
+  color: black;
+}
+
+#pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-align: baseline;
+}
+
+.pic {
+  width: 24%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0;
+  transition: transform 0.05s linear;
+}
+
+.pic:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  transform: rotateZ(10deg);
+}
+
+#instructions h3 {
+  font-size: 24px;
+  text-shadow: 2px 2px 10px #aaa;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+}
+
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+#pics {
+  align-items: flex-start;
+}
+}}
+
+/* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){ 
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+#pics {
+  align-items: flex-start;
+}
+}}
+
+/* Safari 6.1-10.0 (not 10.1) */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){ 
+@media {
+#pics {
+  align-items: flex-start;
+}
+}}
